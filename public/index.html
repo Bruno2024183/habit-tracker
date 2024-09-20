@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Add FullCalendar CDN -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
+</head>
+<body>
+    <h1>Habit Tracker</h1>
+
+    <div id="habit-list"></div>
+
+    <form id="habit-form">
+        <input type="text" id="habit-name" placeholder="Enter habit name" required>
+        <input type="text" id="habit-description" placeholder="Enter habit description">
+        
+        <!-- Nuevo campo para la hora de finalización -->
+        <input type="time" id="habit-completion-time" placeholder="Completion Time">
+    
+        <button type="submit">Add Habit</button>
+    </form>
+
+    <!-- Container for displaying predictions -->
+    <div id="prediction"></div>
+
+    <!-- Habit Completion Calendar -->
+    <h2>Habit Completion Calendar</h2>
+    <div id="calendar"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

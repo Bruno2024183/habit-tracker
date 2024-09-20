@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #2c3e50;
+}
+
+/* Habit Form */
+#habit-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#habit-form input {
+    width: 45%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#habit-form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#habit-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Habit List */
+#habit-list {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#habit-list div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#habit-list div:last-child {
+    border-bottom: none;
+}
+
+#habit-list strong {
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+/* Delete Button */
+#habit-list button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#habit-list button:hover {
+    background-color: #c0392b;
+}
+
+/* Streak Badge */
+.streak-badge {
+    background-color: #27ae60;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #habit-form {
+        flex-direction: column;
+    }
+
+    #habit-form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #habit-form button {
+        width: 100%;
+    }
+}
